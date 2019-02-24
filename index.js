@@ -1,4 +1,4 @@
-class Rest extends React.Component {
+class App extends React.Component {
   friends = [
     { name: 'Sujan', address: 'Chabahil', contact: 9813234434 },
     { name: 'Suraj', address: 'Kalopul', contact: 9841232232 },
@@ -38,6 +38,6 @@ const Person = props => (
 );
 
 ReactDOM.render(
-  <Rest message='Friends Array' />,
+  <App message='Friends Array' />,
   document.getElementById('restful')
 );
