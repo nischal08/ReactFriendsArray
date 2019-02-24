@@ -1,9 +1,9 @@
 class Rest extends React.Component {
   friends = [
-    { name: 'Sujan', year: 2054, skill: 'none' },
-    { name: 'Suraj', year: 2055, skill: 'guff' },
-    { name: 'Kundan', year: 2054, skill: 'yes or no' },
-    { name: 'Mack', year: 2053, skill: 'mimic' }
+    { name: 'Sujan', address: 'Chabahil', contact: 9813234434 },
+    { name: 'Suraj', address: 'Kalopul', contact: 9841232232 },
+    { name: 'Kundan', address: 'Sundarijal', contact:9860023423 },
+    { name: 'Mack', address: 'Mitrapark', contact:9813621921 }
   ];
 
   render() {
@@ -18,8 +18,8 @@ class Rest extends React.Component {
             {this.friends.map(friends => (
               <Person
                 name={friends.name}
-                year={friends.year}
-                skill={friends.skill}
+                add={friends.address}
+                con={friends.contact}
               />
             ))}
           </div>
@@ -32,8 +32,8 @@ class Rest extends React.Component {
 const Person = props => (
   <div>
     <span class='mr-1'>Name : {props.name} ,</span>
-    <span class='mr-1'>Birth Date : {props.year} ,</span>
-    <span class='mr-1'>Skill : {props.skill} </span>
+    <span class='mr-1'>Address : {props.add} ,</span>
+    <span class='mr-1'>Contact : {props.con} </span>
   </div>
 );
 
